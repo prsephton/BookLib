@@ -1,0 +1,3 @@
+<p><a tal:attributes="href python:viewlet.view.url('new')"><button>Add a new book to your library</button></a></p>
+<p><a tal:attributes="href python:viewlet.view.url('../authors')"><button>Edit the list of Authors</button></a></p>
+<p><a tal:attributes="href python:viewlet.view.url('..')"><button>View the Dashboard</button></a></p>

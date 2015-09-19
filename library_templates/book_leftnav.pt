@@ -1,0 +1,2 @@
+<p><a tal:attributes="href string:.."><button>Show the Library</button></a></p>
+<p><a tal:attributes="href string:../../authors"><button>Edit Authors</button></a></p>

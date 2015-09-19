@@ -1,0 +1,36 @@
+<h4>You may filter authors by any of the following fields:</h4>
+
+<div style='margin:1em' tal:content='structure context/@@searchform' />
+
+<div style='float:left' class='prettyTable'
+	tal:define='rows viewlet/auth_results | nothing'
+	tal:condition='rows'>
+	<table>
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Born</th>
+				<th>Died</th>
+				<th>Country</th>
+				<th />
+				<th />
+			</tr>
+		</thead>
+		<tbody>
+			<tr tal:repeat='row rows'>
+				<td tal:content='row/name' />
+				<td tal:content='row/born' />
+				<td tal:content='row/died' />
+				<td tal:content='row/country' />
+				<td><a tal:attributes="href python:view.url(row)">
+					<button>Edit</button></a>
+				</td>
+				<td><a tal:attributes="href python:view.url(row, 'delete')">
+					<button>Delete</button></a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div style='float:none; clear:both' />
+

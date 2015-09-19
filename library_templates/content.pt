@@ -1,0 +1,35 @@
+<h3>To list books in your library, you may filter on any of the following fields:</h3>
+<div tal:content="structure context/@@searchform" />
+<div style='float:left' class='prettyTable'
+	tal:define='rows viewlet/book_results'
+	tal:condition='rows'>
+	<table>
+		<thead>
+			<tr>
+				<th>Title</th>
+				<th>Subject</th>
+				<th>Authors</th>
+				<th>Published</th>
+				<th />
+				<th />
+			</tr>
+		</thead>
+		<tbody>
+			<tr tal:repeat='row rows'>
+				<td tal:content='row/title' />
+				<td tal:content='row/subject' />
+				<td tal:define='authors row/authors'>
+					<div tal:repeat='auth authors' tal:content='auth/name' />
+				</td>
+				<td tal:content='row/pub_date' />
+				<td><a tal:attributes="href python:view.url(row)">
+					<button>Edit</button></a>
+				</td>
+				<td><a tal:attributes="href python:view.url(row, 'delete')">
+					<button>Delete</button></a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div style='float:none; clear:both' />

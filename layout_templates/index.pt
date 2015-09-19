@@ -1,0 +1,32 @@
+<!doctype html >
+<html lang="en-US" style="height: 100%" itemtype="http://schema.org/WebPage"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xml:lang="en"
+    xmlns:tal="http://xml.zope.org/namespaces/tal"
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n" lang="en">
+<head>
+	<title tal:content="context/site_title | nothing">Publication Archiving Tool</title>
+	<meta charset="utf-8" />
+	<meta content="width=device-width" name="viewport" />
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<!--link rel="shortcut icon" tal:attributes="href static/favicon.ico" type="image/x-icon" /-->
+	<link rel="stylesheet" tal:attributes="href static/style.css" type="text/css" />
+	<link rel="stylesheet" tal:attributes="href static/prettytable.css" type="text/css" />
+</head>
+<body>
+	<div id='leftCol'>
+        <div tal:content="structure provider:leftnavmgr" />
+	</div>
+	<div id="topDiv">
+		<h1 tal:content="structure provider:headermgr" />
+	</div>
+	<div id="navDiv">
+
+	</div>
+	<div class='contentFrame'>
+		<div>
+			<div class="content" tal:content="structure provider:contentmgr" />
+		</div>
+	</div>
+</body>
+</html>

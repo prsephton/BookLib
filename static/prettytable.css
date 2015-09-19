@@ -1,0 +1,67 @@
+
+div.prettyTable {
+    vertical-align:middle;
+    border: 1px solid #b4b4b4;
+    padding:4px;
+    background-color:#f3f3f3;
+    width:auto;
+    margin:5px;
+}
+
+div.prettyTable, .miniRounded {
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+
+div.prettyTable > table {
+    border-collapse:collapse;
+}
+
+div.prettyTable > table > tbody > tr {
+    border-bottom: 1px solid #b4b4b4;
+}
+
+div.prettyTable >table >thead {
+    color: #222;
+    text-shadow: 0px 0px 2px #ABA99E;
+/*  text-shadow: 0px 0px 1px;*/
+    border-bottom: 1px solid #b4b4b4;
+    cursor:default;
+}
+
+div.prettyTable >table >thead > tr > th {
+    padding:5px;
+}
+
+div.prettyTable > table > tbody > tr > td {
+    color: #444;
+    border-bottom: 1px solid #b4b4b4;
+    border-right: 1px solid #b4b4b4;
+    padding: 2px 8px;
+    cursor:default;
+
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fefded', endColorstr='#eeeeee'); /* for IE */
+    background-image: -webkit-gradient(linear,left,top,left,bottom,from(#fefefe), to(#eee));
+    background-image: -webkit-linear-gradient(top, #fefefe, #eee);
+    background-image: -moz-linear-gradient(top, #fefefe, #eee);
+    background-image: -ms-linear-gradient(top, #fefefe, #eee);
+    background-image: -o-linear-gradient(top, #fefefe, #eee);
+    background-image: linear-gradient(top, #fefefe, #eee);
+}
+
+div.prettyTable table tr:last-child {
+    border-bottom: none;
+}
+
+div.prettyTable table tr td:last-child {
+    border-right: none;
+}
+
+div.prettyTable table tr:last-child td {
+    border-bottom: none;
+}
+

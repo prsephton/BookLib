@@ -1,0 +1,43 @@
+body {
+    height:100%;
+    overflow-x: none;
+    overflow-y: auto;
+    margin:0;
+    background-color: #FFFFEE;
+}
+
+#topDiv {
+    position: absolute;
+    background-color: #EFEFFF;
+    top:    0px;
+    height: 5em;
+    width: 100%;
+}
+
+#topDiv > h1 {
+    margin:0.5em 1em;
+}
+
+#leftCol {
+    position: fixed;
+    width: 250px;
+    height:1000%;
+    background-color: #FFF5BA;
+}
+
+#leftCol > div {
+    position:relative;
+    margin:0.5em;
+    margin-top:6.5em;
+}
+
+div.contentFrame {
+    position: absolute;
+    top:5em; bottom:0px; left: 250px; right: 0px;
+/*    background-color: #8AE234;*/
+}
+
+div.contentFrame > div {
+    margin-left:1em;
+}
+

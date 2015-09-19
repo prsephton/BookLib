@@ -1,0 +1,8 @@
+<div tal:condition="not:viewlet/view/deleting">
+    <h4>Editing an author:</h4>
+    <div tal:content="structure context/@@editauthor" />
+</div>
+<div tal:condition="viewlet/view/deleting">
+    <h4>Deleting an author:</h4>
+    <div tal:content="structure context/@@delauthor" />
+</div>

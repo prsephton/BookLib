@@ -1,0 +1,12 @@
+<div>
+	<div>Page <span tal:replace='viewlet/currPage' />
+	     of <span tal:replace='viewlet/nPages' /></div>
+	<div>
+		<a tal:condition='viewlet/prevPage'
+			tal:attributes='href string:.?prevPage=True'>
+			<button>Prev Page</button></a>
+		<a tal:condition='viewlet/nextPage'
+			tal:attributes='href string:.?nextPage=True'>
+			<button>Next Page</button></a>
+	</div>
+</div>

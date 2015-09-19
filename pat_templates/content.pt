@@ -1,0 +1,7 @@
+<p>You currently have <span tal:content="context/bookCount" /> books
+and <span tal:content="context/authCount" /> registered authors in your library.</p>
+<div style='max-width:800px; margin:auto'>
+	<img tal:attributes="width string:500px; src static/shelves.jpeg; alt string:Shelves" />
+</div>
+<p>You may view or <a href="library">edit books in your library here</a>,
+    or <a href="authors">manage the list of authors here</a>.</p>
